@@ -26,6 +26,8 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
 
 [Using Digraph Elixir](https://docs.google.com/document/d/1UXHNjjEWeQZ0f8mSCu5urUUyJePuiuBi646pKc8wejE/edit?usp=sharing)
 
+http://elixirsips.com/episodes/064_digraph.html
+
 ## Usage
 
 ```elixir
