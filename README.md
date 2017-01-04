@@ -22,18 +22,34 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
     end
     ```
 
-## Graph Representation
+## Check out Digraph
+
+[Using Digraph Elixir](https://docs.google.com/document/d/1UXHNjjEWeQZ0f8mSCu5urUUyJePuiuBi646pKc8wejE/edit?usp=sharing)
+
+## Usage
+
+```elixir
+iex> GraphsEx.make_dag |> GraphsEx.ancestors
+
+iex> GraphsEx.make_k3 |> GraphsEx.ancestors
+```
+
+## K3 Graph Representation
 ```
  ABC
 A011
 B101
 C110
 ```
-```
-   A
- /   \
-B --- C
-```
+[![Image-alt](https://docs.google.com/drawings/d/1yhf7ccwS2ETb7AKRepdf6z62ScrZfw0OgdVGBoOvmew/pub?w=960&h=720)](https://docs.google.com/drawings/d/1yhf7ccwS2ETb7AKRepdf6z62ScrZfw0OgdVGBoOvmew/edit)
+
 ```elixir
 [{:b, :c}, {:a, :c}, {:a, :b}]
+```
+## DAG Representation
+
+[![Image-alt](https://docs.google.com/drawings/d/1JTNSCS4pL3ZOakNSGLdHHT8mFSuiZIL8QYVVmKlw00o/pub?w=960&h=720)](https://docs.google.com/drawings/d/1JTNSCS4pL3ZOakNSGLdHHT8mFSuiZIL8QYVVmKlw00o/edit)]
+
+```elixir
+[a: {:b, :c}, b: {:c, :d}, c: {:e}, e: {}]
 ```
